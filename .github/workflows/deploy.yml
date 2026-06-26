@@ -1,34 +1,36 @@
 name: Deploy site
-
 on:
   push:
     branches: [main]
   workflow_dispatch:
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
 concurrency:
   group: pages
   cancel-in-progress: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Ce e in repo
+        run: ls -la && echo "--- scripts ---" && ls -la scripts || echo "FARA folder scripts"
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Regenerez manifestul
-        run: node scripts/build-manifest.mjs
+      - name: Regenerez manifestul (optional)
+        run: |
+          if [ -f scripts/build-manifest.mjs ]; then
+            node scripts/build-manifest.mjs
+          else
+            echo "build-manifest.mjs lipseste, public data.js existent"
+          fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
