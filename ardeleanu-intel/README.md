@@ -7,11 +7,11 @@ Filtrare după brand (Dr. Ardeleanu / Dental Safari), canal social, cadență, l
 
 ## Cum funcționează
 
-- **`index.html`** — dashboard cu gate de parolă + filtre. Citește `data/reports.json` și randează cardurile.
+- **`index.html`** — TOTUL pentru pagina principală într-un singur fișier: gate de parolă + filtre + stiluri + date injectate. Nu mai există app.js/data.js/style.css separate.
 - **`data/reports.json`** — manifestul = sursa de adevăr a listei de rapoarte. **Nu se editează manual.**
 - **`data/config.json`** — lista de branduri și canale (cu cadența fiecăruia). Aici adaugi un canal nou.
 - **`reports/<brand>/<canal>/`** — aici pui fișierele HTML ale rapoartelor.
-- **`scripts/build-manifest.mjs`** — scanează `reports/` și regenerează `reports.json`.
+- **`scripts/build-manifest.mjs`** — scanează `reports/` și injectează lista în `index.html` (între marcaje) + scrie `reports.json`.
 
 ---
 

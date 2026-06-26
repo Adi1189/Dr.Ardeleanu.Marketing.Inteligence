@@ -134,15 +134,28 @@ const manifest = {
 
 writeFileSync(OUT_PATH, JSON.stringify(manifest, null, 2) + "\n", "utf8");
 
-// data.js — varianta incarcata prin <script> ca pagina sa mearga si la dublu-click
-// (file://), unde fetch() pe fisiere locale e blocat de browser.
-const dataJs =
-  "// Generat automat de build-manifest.mjs — NU edita manual.\n" +
-  "window.__CONFIG__ = " + JSON.stringify(config) + ";\n" +
-  "window.__REPORTS__ = " + JSON.stringify(manifest) + ";\n";
-writeFileSync(join(ROOT, "data", "data.js"), dataJs, "utf8");
+// Injectez CONFIG + REPORTS direct in index.html, intre marcaje.
+// Asa pagina principala e un singur fisier auto-suficient (parola + dashboard + date),
+// fara app.js/data.js separate care s-ar putea desincroniza.
+const INDEX_PATH = join(ROOT, "index.html");
+let indexHtml = readFileSync(INDEX_PATH, "utf8");
+const START = "/* === DATA START";
+const END = "/* === DATA END === */";
+const s = indexHtml.indexOf(START);
+const e = indexHtml.indexOf(END);
+if (s === -1 || e === -1) {
+  console.error("! Nu am gasit marcajele DATA START / DATA END in index.html. Sarit injectarea.");
+} else {
+  const block =
+    "/* === DATA START (generat automat de build-manifest.mjs — NU edita intre marcaje) === */\n" +
+    "window.__CONFIG__ = " + JSON.stringify(config) + ";\n" +
+    "window.__REPORTS__ = " + JSON.stringify(manifest) + ";\n" +
+    END;
+  indexHtml = indexHtml.slice(0, s) + block + indexHtml.slice(e + END.length);
+  writeFileSync(INDEX_PATH, indexHtml, "utf8");
+}
 
-console.log(`✓ ${reports.length} rapoarte scrise in data/reports.json + data/data.js`);
+console.log(`✓ ${reports.length} rapoarte → reports.json + injectate in index.html`);
 if (warnings.length) {
   console.log("\nAtentionari:");
   for (const w of warnings) console.log("  " + w);
