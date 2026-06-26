@@ -1,0 +1,21 @@
+{
+  "site": {
+    "title": "Marketing Intelligence Reports",
+    "subtitle": "Dr. Ardeleanu Dental Clinics",
+    "din": "Din 2017"
+  },
+  "brands": {
+    "adult": { "label": "Dr. Ardeleanu", "color": "#7B1C16" },
+    "kids": { "label": "Dental Safari", "color": "#168247" }
+  },
+  "channels": {
+    "facebook": { "label": "Facebook", "cadence": "weekly", "icon": "FB" },
+    "instagram": { "label": "Instagram", "cadence": "weekly", "icon": "IG" },
+    "tiktok": { "label": "TikTok", "cadence": "weekly", "icon": "TT" },
+    "youtube": { "label": "YouTube", "cadence": "weekly", "icon": "YT" },
+    "google-ads": { "label": "Google Ads", "cadence": "monthly", "icon": "GA" },
+    "linkedin": { "label": "LinkedIn", "cadence": "monthly", "icon": "IN" },
+    "market-moves": { "label": "Market Moves", "cadence": "monthly", "icon": "MM" },
+    "cross-channel": { "label": "Concluzii", "cadence": "weekly", "icon": "CC" }
+  }
+}

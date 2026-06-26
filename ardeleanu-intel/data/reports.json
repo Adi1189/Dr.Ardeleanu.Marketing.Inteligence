@@ -1,0 +1,226 @@
+{
+  "generated_at": "2026-06-26T07:08:37.971Z",
+  "count": 22,
+  "reports": [
+    {
+      "id": "adult-cross-channel-2026-06-15",
+      "brand": "adult",
+      "channel": "cross-channel",
+      "cadence": "weekly",
+      "date": "2026-06-15",
+      "period_label": "15–21 iun 2026",
+      "title": "Sinteză Cross-Channel · 15–21 iunie 2026 · Dr. Ardeleanu",
+      "path": "reports/adult/cross-channel/2026-06-15_raport-sinteza-cross-channel-2026-06-21.html"
+    },
+    {
+      "id": "adult-facebook-2026-06-15",
+      "brand": "adult",
+      "channel": "facebook",
+      "cadence": "weekly",
+      "date": "2026-06-15",
+      "period_label": "15–21 iun 2026",
+      "title": "Raport Facebook Săptămânal · Dr. Ardeleanu · 15–21 iunie 2026",
+      "path": "reports/adult/facebook/2026-06-15_raport-facebook-2026-06-21.html"
+    },
+    {
+      "id": "adult-instagram-2026-06-15",
+      "brand": "adult",
+      "channel": "instagram",
+      "cadence": "weekly",
+      "date": "2026-06-15",
+      "period_label": "15–21 iun 2026",
+      "title": "Raport Instagram Săptămânal · Dr. Ardeleanu · 15–21 iunie 2026",
+      "path": "reports/adult/instagram/2026-06-15_raport-instagram-2026-06-21.html"
+    },
+    {
+      "id": "adult-tiktok-2026-06-15",
+      "brand": "adult",
+      "channel": "tiktok",
+      "cadence": "weekly",
+      "date": "2026-06-15",
+      "period_label": "15–21 iun 2026",
+      "title": "Raport TikTok Săptămânal · 15–21 iunie 2026 · Dr. Ardeleanu",
+      "path": "reports/adult/tiktok/2026-06-15_raport-tiktok-2026-06-21.html"
+    },
+    {
+      "id": "adult-youtube-2026-06-15",
+      "brand": "adult",
+      "channel": "youtube",
+      "cadence": "weekly",
+      "date": "2026-06-15",
+      "period_label": "15–21 iun 2026",
+      "title": "Raport YouTube Săptămânal · 15–21 iunie 2026 · Clinicile Dr. Ardeleanu",
+      "path": "reports/adult/youtube/2026-06-15_raport-youtube-2026-06-21.html"
+    },
+    {
+      "id": "adult-cross-channel-2026-06-08",
+      "brand": "adult",
+      "channel": "cross-channel",
+      "cadence": "weekly",
+      "date": "2026-06-08",
+      "period_label": "8–14 iun 2026",
+      "title": "Top 3 Concluzii Acționabile · Sinteză Cross-Channel · 8–14 iunie 2026 · Dr. Ardeleanu",
+      "path": "reports/adult/cross-channel/2026-06-08_concluzii-cross-channel-8-14-iunie-2026.html"
+    },
+    {
+      "id": "adult-facebook-2026-06-08",
+      "brand": "adult",
+      "channel": "facebook",
+      "cadence": "weekly",
+      "date": "2026-06-08",
+      "period_label": "8–14 iun 2026",
+      "title": "Raport Facebook Săptămânal · 8–14 iunie 2026 · Dr. Ardeleanu",
+      "path": "reports/adult/facebook/2026-06-08_raport-facebook-2026-06-14.html"
+    },
+    {
+      "id": "adult-instagram-2026-06-08",
+      "brand": "adult",
+      "channel": "instagram",
+      "cadence": "weekly",
+      "date": "2026-06-08",
+      "period_label": "8–14 iun 2026",
+      "title": "Raport Instagram Săptămânal · 8–14 iunie 2026 · Dr. Ardeleanu",
+      "path": "reports/adult/instagram/2026-06-08_raport-instagram-2026-06-14.html"
+    },
+    {
+      "id": "adult-tiktok-2026-06-08",
+      "brand": "adult",
+      "channel": "tiktok",
+      "cadence": "weekly",
+      "date": "2026-06-08",
+      "period_label": "8–14 iun 2026",
+      "title": "TikTok · Raport săptămânal · 8–14 iunie 2026 · Dr. Ardeleanu",
+      "path": "reports/adult/tiktok/2026-06-08_raport-tiktok-2026-06-14.html"
+    },
+    {
+      "id": "adult-youtube-2026-06-08",
+      "brand": "adult",
+      "channel": "youtube",
+      "cadence": "weekly",
+      "date": "2026-06-08",
+      "period_label": "8–14 iun 2026",
+      "title": "Raport YouTube Competitori — 8-14 iunie 2026 | Dr. Ardeleanu",
+      "path": "reports/adult/youtube/2026-06-08_raport-youtube-8-14-iunie-2026.html"
+    },
+    {
+      "id": "adult-cross-channel-2026-06-01",
+      "brand": "adult",
+      "channel": "cross-channel",
+      "cadence": "weekly",
+      "date": "2026-06-01",
+      "period_label": "1–7 iun 2026",
+      "title": "3 concluzii acționabile · Săpt. 24/2026 · Dr. Ardeleanu",
+      "path": "reports/adult/cross-channel/2026-06-01_concluzii-actionabile-2026-06-08.html"
+    },
+    {
+      "id": "adult-facebook-2026-06-01",
+      "brand": "adult",
+      "channel": "facebook",
+      "cadence": "daily",
+      "date": "2026-06-01",
+      "period_label": "1 iun 2026",
+      "title": "Facebook Quick Check · 1 Iunie 2026 · Dr. Ardeleanu",
+      "path": "reports/adult/facebook/2026-06-01_facebook-quick-check-2026-06-01.html"
+    },
+    {
+      "id": "adult-facebook-2026-06-01",
+      "brand": "adult",
+      "channel": "facebook",
+      "cadence": "weekly",
+      "date": "2026-06-01",
+      "period_label": "1–7 iun 2026",
+      "title": "Raport Facebook · Săpt. 1-7 iunie 2026 · Dr. Ardeleanu Dental Clinics",
+      "path": "reports/adult/facebook/2026-06-01_raport-facebook-2026-06-08.html"
+    },
+    {
+      "id": "adult-google-ads-2026-06-01",
+      "brand": "adult",
+      "channel": "google-ads",
+      "cadence": "weekly",
+      "date": "2026-06-01",
+      "period_label": "1–7 iun 2026",
+      "title": "Raport Google Ads · Competitori · 2026-06-08",
+      "path": "reports/adult/google-ads/2026-06-01_raport-google-ads-2026-06-08.html"
+    },
+    {
+      "id": "adult-tiktok-2026-06-01",
+      "brand": "adult",
+      "channel": "tiktok",
+      "cadence": "weekly",
+      "date": "2026-06-01",
+      "period_label": "1–7 iun 2026",
+      "title": "Raport TikTok competitori · Săpt. 23 · 1–7 iunie 2026",
+      "path": "reports/adult/tiktok/2026-06-01_raport-tiktok-competitori-1-7-iunie-2026.html"
+    },
+    {
+      "id": "adult-youtube-2026-06-01",
+      "brand": "adult",
+      "channel": "youtube",
+      "cadence": "weekly",
+      "date": "2026-06-01",
+      "period_label": "1–7 iun 2026",
+      "title": "YouTube — Raport săptămânal · 1–7 iunie 2026",
+      "path": "reports/adult/youtube/2026-06-01_raport-youtube-2026-06-09.html"
+    },
+    {
+      "id": "adult-market-moves-2026-05-26",
+      "brand": "adult",
+      "channel": "market-moves",
+      "cadence": "weekly",
+      "date": "2026-05-26",
+      "period_label": "26 mai – 1 iun 2026",
+      "title": "Mișcări de Piață — Săpt. 22 | 26 Mai – 1 Iunie 2026 | Dr. Ardeleanu",
+      "path": "reports/adult/market-moves/2026-05-26_raport-market-moves-2026-06-01.html"
+    },
+    {
+      "id": "adult-facebook-2026-05-25",
+      "brand": "adult",
+      "channel": "facebook",
+      "cadence": "weekly",
+      "date": "2026-05-25",
+      "period_label": "25–31 mai 2026",
+      "title": "Facebook Raport Săptămânal · Dr. Ardeleanu · 31 mai 2026",
+      "path": "reports/adult/facebook/2026-05-25_raport-facebook-2026-05-31.html"
+    },
+    {
+      "id": "adult-google-ads-2026-05-25",
+      "brand": "adult",
+      "channel": "google-ads",
+      "cadence": "weekly",
+      "date": "2026-05-25",
+      "period_label": "25–31 mai 2026",
+      "title": "Google Ads Raport Săptămânal · Dr. Ardeleanu · 31 mai 2026",
+      "path": "reports/adult/google-ads/2026-05-25_raport-google-ads-2026-05-31.html"
+    },
+    {
+      "id": "adult-linkedin-2026-05-25",
+      "brand": "adult",
+      "channel": "linkedin",
+      "cadence": "weekly",
+      "date": "2026-05-25",
+      "period_label": "25–31 mai 2026",
+      "title": "LinkedIn — Raport Săptămânal · 25–31 Mai 2026",
+      "path": "reports/adult/linkedin/2026-05-25_raport-linkedin-2026-05-31.html"
+    },
+    {
+      "id": "adult-tiktok-2026-05-25",
+      "brand": "adult",
+      "channel": "tiktok",
+      "cadence": "weekly",
+      "date": "2026-05-25",
+      "period_label": "25–31 mai 2026",
+      "title": "TikTok — Raport Săptămânal · 25–31 Mai 2026",
+      "path": "reports/adult/tiktok/2026-05-25_raport-tiktok-2026-05-31.html"
+    },
+    {
+      "id": "adult-youtube-2026-05-25",
+      "brand": "adult",
+      "channel": "youtube",
+      "cadence": "weekly",
+      "date": "2026-05-25",
+      "period_label": "25–31 mai 2026",
+      "title": "YouTube — Raport Săptămânal · 25–31 Mai 2026",
+      "path": "reports/adult/youtube/2026-05-25_raport-youtube-2026-05-31.html"
+    }
+  ]
+}

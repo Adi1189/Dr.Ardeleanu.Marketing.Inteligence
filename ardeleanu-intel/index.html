@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketing Intelligence Reports · Dr. Ardeleanu</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ============ GATE DE PAROLĂ (client-side) ============ -->
+  <div id="gate" class="gate">
+    <div class="gate-card">
+      <img class="gate-logo-img" src="assets/img/logo.png" alt="Dr. Ardeleanu Dental Clinics" />
+      <h1>Marketing Intelligence Reports</h1>
+      <p class="gate-sub">Acces intern. Introdu parola pentru a continua.</p>
+      <input type="password" id="gate-input" placeholder="Parolă" autocomplete="off" />
+      <button id="gate-btn">Intră</button>
+      <p id="gate-error" class="gate-error" hidden></p>
+    </div>
+  </div>
+
+  <!-- ============ APLICAȚIA ============ -->
+  <div id="app" hidden>
+    <header class="topbar">
+      <img class="logo" src="assets/img/logo.png" alt="Dr. Ardeleanu Dental Clinics" />
+      <span class="brand-tag">Marketing Intelligence Reports</span>
+    </header>
+
+    <main class="wrap">
+      <!-- Filtre -->
+      <section class="filters" aria-label="Filtre">
+        <div class="filter-row">
+          <div class="seg" id="f-brand" data-key="brand">
+            <button class="seg-btn active" data-val="">Toate brandurile</button>
+          </div>
+          <div class="seg" id="f-cadence" data-key="cadence">
+            <button class="seg-btn active" data-val="">Toate</button>
+            <button class="seg-btn" data-val="weekly">Săptămânal</button>
+            <button class="seg-btn" data-val="monthly">Lunar</button>
+            <button class="seg-btn" data-val="daily">Zilnic</button>
+          </div>
+        </div>
+
+        <div class="filter-row chips" id="f-channel" data-key="channel">
+          <button class="chip active" data-val="">Toate rapoartele</button>
+        </div>
+
+        <div class="filter-row tools">
+          <input type="search" id="f-search" placeholder="Caută în titlu sau perioadă…" />
+          <input type="month" id="f-month" aria-label="Filtru lună" />
+          <button id="f-clear" class="ghost">Resetează</button>
+        </div>
+      </section>
+
+      <div class="meta-line">
+        <span id="result-count">0 rapoarte</span>
+        <span id="manifest-date" class="muted"></span>
+      </div>
+
+      <!-- Grid rapoarte -->
+      <section id="grid" class="grid" aria-live="polite"></section>
+      <p id="empty" class="empty" hidden>Niciun raport pentru filtrele selectate.</p>
+    </main>
+
+    <footer class="foot"></footer>
+  </div>
+
+  <script src="data/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

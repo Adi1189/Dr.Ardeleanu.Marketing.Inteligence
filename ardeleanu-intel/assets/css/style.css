@@ -1,0 +1,140 @@
+:root {
+  --primary:    #7B1C16;  /* Falu Red */
+  --wheat:      #F2DAB7;
+  --cream:      #F5EDE3;
+  --olive:      #B5BD5C;
+  --safari:     #168247;  /* Dental Safari green */
+  --amber:      #C9A227;
+  --yellow:     #FBE483;
+  --terracotta: #dd7e6b;
+  --alert:      #FF0300;
+  --ink:        #222222;
+  --white:      #FFFFFF;
+  --line:       #e7ddd0;
+  --shadow:     0 2px 10px rgba(123, 28, 22, .07);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+}
+button { font-family: inherit; cursor: pointer; }
+input { font-family: inherit; }
+
+/* ---------- GATE ---------- */
+.gate {
+  position: fixed; inset: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--primary);
+  background-image: radial-gradient(circle at 30% 20%, #8f2820 0%, var(--primary) 55%);
+  padding: 24px;
+}
+.gate-card {
+  background: var(--white); border-radius: 18px; padding: 38px 34px;
+  width: 100%; max-width: 380px; box-shadow: 0 18px 50px rgba(0,0,0,.28); text-align: center;
+}
+.gate-logo-img { height: 52px; width: auto; margin-bottom: 18px; }
+.gate-card h1 { font-family: 'Playfair Display', serif; font-size: 19px; font-weight: 700; color: var(--primary); margin: 0 0 6px; }
+.gate-sub { font-size: 13px; color: #7a6e63; margin: 0 0 22px; }
+.gate-card input {
+  width: 100%; padding: 13px 14px; border: 1.5px solid var(--line);
+  border-radius: 10px; font-size: 15px; margin-bottom: 12px; outline: none;
+}
+.gate-card input:focus { border-color: var(--amber); }
+.gate-card button {
+  width: 100%; padding: 13px; border: none; border-radius: 10px;
+  background: var(--primary); color: var(--white); font-weight: 600; font-size: 15px; transition: background .15s;
+}
+.gate-card button:hover { background: #66160f; }
+.gate-error { color: var(--alert); font-size: 13px; margin: 12px 0 0; }
+
+/* ---------- TOPBAR ---------- */
+.topbar {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 16px 28px; background: var(--white); border-bottom: 3px solid var(--primary);
+}
+.topbar .logo { height: 46px; width: auto; display: block; }
+.brand-tag {
+  font-family: 'Playfair Display', serif; font-weight: 700; font-size: 18px; color: var(--primary);
+  text-align: right; line-height: 1.1;
+}
+
+/* ---------- LAYOUT ---------- */
+.wrap { max-width: 1100px; margin: 0 auto; padding: 28px 20px 60px; }
+
+/* ---------- FILTRE ---------- */
+.filters { background: var(--white); border-radius: 14px; padding: 18px 18px 8px; box-shadow: var(--shadow); margin-bottom: 18px; }
+.filter-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
+
+.seg { display: inline-flex; background: var(--cream); border-radius: 10px; padding: 3px; gap: 2px; }
+.seg-btn {
+  border: none; background: transparent; padding: 8px 14px; border-radius: 8px;
+  font-size: 13px; font-weight: 500; color: #6f655b; transition: all .15s;
+}
+.seg-btn.active { background: var(--primary); color: var(--white); }
+
+.chips { gap: 8px; }
+.chip {
+  border: 1.5px solid var(--line); background: var(--white); color: #6f655b;
+  padding: 7px 14px; border-radius: 999px; font-size: 12.5px; font-weight: 500; transition: all .15s;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.chip:hover { border-color: var(--amber); }
+.chip.active { background: var(--primary); border-color: var(--primary); color: var(--white); }
+.chip .tag { font-size: 10px; opacity: .65; font-weight: 400; }
+.chip.cad-monthly.active { background: var(--amber); border-color: var(--amber); color: var(--ink); }
+
+.tools { gap: 10px; }
+.tools input[type="search"] {
+  flex: 1; min-width: 200px; padding: 10px 14px; border: 1.5px solid var(--line);
+  border-radius: 10px; font-size: 14px; outline: none;
+}
+.tools input[type="search"]:focus { border-color: var(--amber); }
+.tools input[type="month"] { padding: 9px 12px; border: 1.5px solid var(--line); border-radius: 10px; font-size: 13px; outline: none; }
+.ghost { background: transparent; border: 1.5px solid var(--line); color: #6f655b; padding: 9px 16px; border-radius: 10px; font-size: 13px; }
+.ghost:hover { border-color: var(--primary); color: var(--primary); }
+
+/* ---------- META LINE ---------- */
+.meta-line { display: flex; justify-content: space-between; align-items: baseline; margin: 4px 4px 16px; font-size: 13px; }
+#result-count { font-weight: 600; color: var(--primary); }
+.muted { color: #9a8e82; font-size: 12px; }
+
+/* ---------- GRID ---------- */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.card {
+  background: var(--white); border-radius: 14px; padding: 18px; box-shadow: var(--shadow);
+  text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: 10px;
+  border-left: 5px solid var(--primary); transition: transform .12s, box-shadow .12s;
+}
+.card:hover { transform: translateY(-3px); box-shadow: 0 8px 22px rgba(123,28,22,.14); }
+.card.brand-kids { border-left-color: var(--safari); }
+
+.card-top { display: flex; align-items: center; gap: 8px; }
+.badge {
+  font-size: 10px; font-weight: 600; letter-spacing: .5px; text-transform: uppercase;
+  padding: 3px 9px; border-radius: 999px;
+}
+.badge-brand { background: var(--wheat); color: var(--primary); }
+.card.brand-kids .badge-brand { background: #d8f0e0; color: var(--safari); }
+.badge-cad { background: var(--cream); color: #7a6e63; }
+
+.card-channel { font-size: 12px; font-weight: 600; color: var(--amber); letter-spacing: 1px; text-transform: uppercase; }
+.card-title { font-size: 15px; font-weight: 700; line-height: 1.3; margin: 0; }
+.card-period { font-size: 13px; color: #6f655b; }
+.card-foot { margin-top: auto; font-size: 12px; color: #9a8e82; display: flex; justify-content: space-between; align-items: center; }
+.card-foot .open { color: var(--primary); font-weight: 600; }
+
+.empty { text-align: center; color: #9a8e82; padding: 50px 0; font-size: 15px; }
+
+/* ---------- FOOTER ---------- */
+.foot { padding: 20px 0; }
+
+@media (max-width: 540px) {
+  .topbar { padding: 14px 18px; }
+  .grid { grid-template-columns: 1fr; }
+  .tools input[type="search"] { min-width: 100%; }
+}
